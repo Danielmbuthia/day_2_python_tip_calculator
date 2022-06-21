@@ -13,6 +13,6 @@ tip_given = int(input("How much tip would you like to give? 10, 12, or 15? "))
 members = int(input("How many people to split the bill? "))
 
 tip_given_percent = 1 + tip_given/100
-each_member_contribution = (total_bill/members) * tip_given_percent
+each_member_contribution = (total_bill*tip_given_percent)/members
 each_member_contribution_formated = format(each_member_contribution,'.2f')
 print(f"Each person should pay: ${each_member_contribution_formated}")
